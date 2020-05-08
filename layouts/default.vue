@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <div class="default-layout">
+    <div>
       <nuxt />
     </div>
   </div>
@@ -35,9 +35,15 @@
 
   h2 {
     font-family: 'Playfair Display';
-    font-size: 25px;
+    font-size: 31px;
     font-weight: 800;
     margin-bottom: base-unit(7);
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: base-unit(5);
   }
 
   p {
@@ -52,10 +58,6 @@
       color: $text-color;
       text-decoration: none;
     }
-  }
-
-  .default-layout {
-    padding: 0 base-unit(25);
   }
 
   .bold {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="default-layout">
     <div class="above-the-fold">
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
@@ -22,6 +22,10 @@
 </template>
 
 <style lang="scss">
+
+  .default-layout {
+    padding: 0 base-unit(25);
+  }
 
   .above-the-fold {
     height: 100vh; // 100vh - index container padding
@@ -97,6 +101,11 @@
 
     .get-in-touch {
       margin: auto;
+    }
+
+    .know-more {
+      color: $title-blue;
+      margin-bottom: base-unit(4);
     }
   }
 

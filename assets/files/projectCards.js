@@ -4,7 +4,7 @@ export const projects =
             name: 'Sofya',
             description: 'Sofya is software suite in SaaS mode, dedicated to real estate and construction work. It regroups key tools allowing real estate and construction experts to relentlessly work together, from stocking documents to graphical data visualisation.',
             role: 'Mostly UX/UI but also lots of development and brand image creation',
-            img: require('@/assets/pictures/sofya_card.png'),
+            img: require('@/assets/images/sofya/sofya_card.png'),
             backgroundColor: '#B4E8DA'
 
         },
