@@ -14,7 +14,21 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -32,11 +46,16 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      '~assets/sass/_variables.scss',
+      '~assets/sass/_mixins.scss'
+    ]
+  },
   /*
    ** Nuxt.js modules
    */
@@ -63,10 +82,4 @@ export default {
      */
     extend(config, ctx) {}
   },
-
-  styleResources: {
-    scss: [
-      '~assets/sass/_variables.scss'
-      ]
-  }
 }

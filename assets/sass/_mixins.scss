@@ -1,0 +1,55 @@
+@function base-unit($multiplier) {
+    @return calc(#{$base-unit} * #{$multiplier});
+}
+
+@mixin small-double-text-before {
+    -webkit-text-stroke: 0px transparent;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    z-index: -1;
+}
+
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin get-in-touch-animation {
+    animation: 2s ease-in-out 1 forwards get-in-touch-bakground;
+}
+
+@keyframes get-in-touch-bakground {
+    0% {
+        height: 105%
+    }
+    5% {
+        height: 2px;
+    }
+    6% {
+        width: 110%;
+    }
+    9% {
+        width: 100%;
+        height: 3px;
+    }
+    100% {
+        height: 3px;
+    }
+}
+
+@mixin get-in-touch-animation-out {
+    animation: 2s ease-in-out 1 forwards get-in-touch-bakground-out;
+}
+
+@keyframes get-in-touch-bakground-out {
+    0% {
+        height: 3px;
+        border-radius: 5px;
+    }
+    25% {
+        height: 105%;
+    }
+    30% {
+        height: 100%;
+    }
+}
