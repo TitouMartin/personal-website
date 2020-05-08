@@ -31,6 +31,12 @@
       top: 50%;
       transform: translateY(-60%);
 
+      h1 {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: base-unit(4);
+      }
+
+
       .double-text {
         -webkit-text-stroke: 1px $text-color;
         color: transparent;
@@ -74,8 +80,14 @@
   .cards-container {
     margin-bottom: base-unit(10);
 
-    .project-card:not(:last-child) {
-      margin-bottom: base-unit(10);
+    .card-link {
+      display: inline-block;
+      margin-left: 0;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: base-unit(10);
+      }
     }
   }
 
@@ -107,9 +119,6 @@
         cards: projects.projects
       }
     },
-
-    methods: {
-    }
   })
 
 </script>

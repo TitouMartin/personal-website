@@ -1,13 +1,15 @@
 <template>
-    <div class="project-card" :style="style">
-        <div class="project-card-info">
-            <h2>{{ cardInfo.name }}</h2>
-            <p class="light-text">{{ cardInfo.description}}</p>
-            <p class="light-text">{{ cardInfo.role }}</p>
-            <p class="bold learn-more link">Learn More</p>
+    <nuxt-link :to="computeRoute()" class="card-link">
+        <div class="project-card" :style="style">
+            <div class="project-card-info">
+                <h2>{{ cardInfo.name }}</h2>
+                <p class="light-text">{{ cardInfo.description}}</p>
+                <p class="light-text">{{ cardInfo.role }}</p>
+                <p class="bold learn-more link">Learn More</p>
+            </div>
+            <img :src="cardInfo.img" class="card-image">
         </div>
-        <img :src="cardInfo.img" class="card-image">
-    </div>
+    </nuxt-link>
 </template>
 
 
@@ -32,6 +34,10 @@
         .project-card-info {
             width: 45%;
 
+            h2 {
+                margin-bottom: base-unit(2);
+            }
+
             .learn-more {
                 margin-top: base-unit(2);
             }
@@ -55,9 +61,14 @@
         name: 'projectCard',
         data() {
             return {
-                style:{
+                style: {
                     backgroundColor: this.cardInfo.backgroundColor
                 }
+            }
+        },
+        methods: {
+            computeRoute() {
+                return `/work/${this.cardInfo.name}`;
             }
         }
     }

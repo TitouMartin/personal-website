@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <div class="navbar-content">
-            <p>Titouan Martin</p>
+            <nuxt-link to="/">Titouan Martin</nuxt-link>
             <div class="navbar-links">
                 <p class="margin-right link">About</p>
                 <p class="link">Work</p>
@@ -19,6 +19,7 @@
         position: fixed;
         top: 0;
         font-weight: bold;
+        z-index: 1000;
 
         .navbar-content {
             display: flex;

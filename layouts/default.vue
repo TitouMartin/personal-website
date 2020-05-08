@@ -27,15 +27,31 @@
     color: $text-color;
   }
 
+  h1 {
+    font-size: 61px;
+    margin-bottom: base-unit(10);
+    font-family: 'Playfair Display';
+  }
+
   h2 {
     font-family: 'Playfair Display';
     font-size: 25px;
     font-weight: 800;
-    margin-bottom: base-unit(3);
+    margin-bottom: base-unit(7);
   }
 
   p {
     margin-bottom: $base-unit;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
   }
 
   .default-layout {
