@@ -11,9 +11,9 @@
           Get in touch
 
           <div class="apps">
-            <div class="app mail"></div>
-            <div class="app in"></div>
-            <div class="app insta"></div>
+            <div class="app mail"><font-awesome-icon :icon="['far', 'envelope']" /></div>
+            <div class="app in"><font-awesome-icon :icon="['fab', 'linkedin']" /></div>
+            <div class="app insta"><font-awesome-icon :icon="['fab', 'instagram']" /></div>
           </div>
           </div>
         </div>
