@@ -5,18 +5,6 @@
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
         <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products</p>
         <p class="medium-fat">while making them <span class="double-text beautiful">beautiful</span> on the way.</p>
-
-        <div class="get-in-touch">
-          <div class="button bold white">
-          Get in touch
-
-          <div class="apps">
-            <div class="app mail"><font-awesome-icon :icon="['far', 'envelope']" /></div>
-            <div class="app in"><font-awesome-icon :icon="['fab', 'linkedin']" /></div>
-            <div class="app insta"><font-awesome-icon :icon="['fab', 'instagram']" /></div>
-          </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -28,6 +16,7 @@
 
     <div class="more">
       <h2>& Many to come...</h2>
+      <GetInTouch />
     </div>
   </div>
 </template>
@@ -93,6 +82,10 @@
   .more {
     width: fit-content;
     margin: 0 auto base-unit(10) auto;
+
+    .get-in-touch {
+      margin: auto;
+    }
   }
 
 </style>
@@ -100,11 +93,13 @@
 <script>
   import Vue from 'vue'
   import ProjectCard from '~/components/ProjectCard.vue'
+  import GetInTouch from '~/components/GetInTouch.vue'
   import * as projects from '~/assets/files/projectCards'
 
   export default Vue.extend({
     components: {
-      ProjectCard
+      ProjectCard,
+      GetInTouch
     },
 
     data() {

@@ -77,7 +77,7 @@ export default {
           },
          {
            set:'@fortawesome/free-brands-svg-icons',
-           icons: ['faLinkedin', 'faInstagram']
+           icons: ['faLinkedinIn', 'faInstagram']
          }
        ]
       }

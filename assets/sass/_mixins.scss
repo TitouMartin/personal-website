@@ -15,24 +15,21 @@
 }
 
 @mixin get-in-touch-animation {
-    animation: 2s ease-in-out 1 forwards get-in-touch-bakground;
+    animation: 0.5s ease-in-out 1 forwards get-in-touch-bakground;
 }
 
 @keyframes get-in-touch-bakground {
     0% {
         height: 105%
     }
-    5% {
+    50% {
         height: 2px;
     }
-    6% {
+    85% {
         width: 110%;
     }
-    9% {
-        width: 100%;
-        height: 3px;
-    }
     100% {
+        width: 100%;
         height: 3px;
     }
 }
@@ -51,5 +48,43 @@
     }
     30% {
         height: 100%;
+    }
+}
+
+@mixin get-in-touch-apps-animation {
+    animation: 0.5s ease-in-out 1 forwards get-in-touch-apps-animation;
+}
+
+@keyframes get-in-touch-apps-animation {
+    60% {
+        opacity: 1;
+    }
+    92% {
+        top: 35%;
+        width: 105%;
+    }
+    100% {
+        opacity: 1;
+        top: 40%;
+        width: 100%;
+    }
+}
+
+@mixin get-in-touch-apps-out {
+    animation: 0.5s ease-in-out 1 forwards get-in-touch-apps-out;
+
+}
+
+@keyframes get-in-touch-apps-out {
+    0% {
+        opacity: 1;
+        top: 40%;
+        width: 100%;
+    }
+    30% {
+        opacity: 0;
+        top: 70%;
+        left: 50%;
+        width: 50%;
     }
 }
