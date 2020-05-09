@@ -27,16 +27,26 @@
     color: $text-color;
   }
 
+  .default-layout {
+    padding: 0 base-unit(25);
+
+    &.default-container {
+      padding-top: 20vh;
+    }
+  }
+
   h1 {
-    font-size: 61px;
+    font-size: 50px;
     margin-bottom: base-unit(10);
-    font-family: 'Playfair Display';
+    // font-family: 'Playfair Display';
+    font-weight: 900;
   }
 
   h2 {
-    font-family: 'Playfair Display';
-    font-size: 31px;
-    font-weight: 800;
+    // font-family: 'Playfair Display';
+    font-size: 25px;
+    // font-weight: 800;
+    font-weight: 900;
     margin-bottom: base-unit(7);
   }
 
@@ -62,6 +72,10 @@
 
   .bold {
     font-weight: bold;
+  }
+
+  .light-text {
+    opacity: 0.5;
   }
 
   .white {

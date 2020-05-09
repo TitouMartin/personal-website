@@ -4,7 +4,7 @@
             <nuxt-link to="/">Titouan Martin</nuxt-link>
             <div class="navbar-links">
                 <p class="margin-right link">About</p>
-                <p class="link">Work</p>
+                <nuxt-link to="/work" class="link">Work</nuxt-link>
             </div>
         </div>
     </div>

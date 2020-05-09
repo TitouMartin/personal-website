@@ -2,12 +2,12 @@
     <nuxt-link :to="computeRoute()" class="card-link">
         <div class="project-card" :style="style">
             <div class="project-card-info">
-                <h2>{{ cardInfo.name }}</h2>
-                <p class="light-text">{{ cardInfo.description}}</p>
-                <p class="light-text">{{ cardInfo.role }}</p>
+                <h2>{{ cardInfos.name }}</h2>
+                <p class="light-text">{{ cardInfos.description}}</p>
+                <p class="light-text">{{ cardInfos.role }}</p>
                 <p class="bold learn-more link">Learn More</p>
             </div>
-            <img :src="cardInfo.img" class="card-image">
+            <img :src="cardInfos.cardImg" class="card-image">
         </div>
     </nuxt-link>
 </template>
@@ -57,18 +57,18 @@
 
 <script>
     export default {
-        props: ['cardInfo'],
+        props: ['cardInfos'],
         name: 'projectCard',
         data() {
             return {
                 style: {
-                    backgroundColor: this.cardInfo.backgroundColor
+                    backgroundColor: this.cardInfos.cardBackgroundColor
                 }
             }
         },
         methods: {
             computeRoute() {
-                return `/work/${this.cardInfo.name}`;
+                return `/work/${this.cardInfos.pageLink}`;
             }
         }
     }

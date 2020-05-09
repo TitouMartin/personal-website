@@ -25,7 +25,7 @@
     50% {
         height: 2px;
     }
-    85% {
+    80% {
         width: 105%;
     }
     100% {
@@ -35,7 +35,7 @@
 }
 
 @mixin get-in-touch-animation-out {
-    animation: 2s ease-in-out 1 forwards get-in-touch-bakground-out;
+    animation: 0.5s ease-in-out 1 forwards get-in-touch-bakground-out;
 }
 
 @keyframes get-in-touch-bakground-out {
@@ -43,10 +43,10 @@
         height: 3px;
         border-radius: 5px;
     }
-    25% {
+    95% {
         height: 105%;
     }
-    30% {
+    100% {
         height: 100%;
     }
 }
@@ -82,5 +82,44 @@
         top: 70%;
         left: 50%;
         width: 50%;
+    }
+}
+
+@mixin project-header-appear {
+    animation: 1s ease-in-out 1 forwards project-header-appear;
+}
+
+@keyframes project-header-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin project-header-appear-img {
+    animation: 1s ease-in-out 1 forwards project-header-appear-img;
+}
+
+@keyframes project-header-appear-img {
+    0% {
+        margin-top: base-unit(-1);
+    }
+    100% {
+        margin-top: base-unit(2);
+    }
+}
+
+@mixin project-content-appear {
+    animation: 1s ease-in-out 1 forwards project-content-appear;
+}
+
+@keyframes project-content-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

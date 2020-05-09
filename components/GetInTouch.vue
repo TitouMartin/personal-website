@@ -14,6 +14,20 @@
 
 <style lang="scss">
 
+    .more {
+        width: fit-content;
+        margin: 0 auto base-unit(10) auto;
+
+        .get-in-touch {
+        margin: auto;
+        }
+
+        .know-more {
+        color: $title-blue;
+        margin-bottom: base-unit(4);
+        }
+    }
+
     .get-in-touch {
 
         width: fit-content;

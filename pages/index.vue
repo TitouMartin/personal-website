@@ -10,7 +10,7 @@
 
     <div class="cards-container">
       <template v-for="card in cards">
-        <project-card :cardInfo="card" />
+        <project-card :cardInfos="card" />
       </template>
     </div>
 
@@ -22,10 +22,6 @@
 </template>
 
 <style lang="scss">
-
-  .default-layout {
-    padding: 0 base-unit(25);
-  }
 
   .above-the-fold {
     height: 100vh; // 100vh - index container padding
@@ -95,27 +91,13 @@
     }
   }
 
-  .more {
-    width: fit-content;
-    margin: 0 auto base-unit(10) auto;
-
-    .get-in-touch {
-      margin: auto;
-    }
-
-    .know-more {
-      color: $title-blue;
-      margin-bottom: base-unit(4);
-    }
-  }
-
 </style>
 
 <script>
   import Vue from 'vue'
   import ProjectCard from '~/components/ProjectCard.vue'
   import GetInTouch from '~/components/GetInTouch.vue'
-  import * as projects from '~/assets/files/projectCards'
+  import * as projects from '~/assets/files/projects.js'
 
   export default Vue.extend({
     components: {
@@ -125,7 +107,7 @@
 
     data() {
       return {
-        cards: projects.projects
+        cards: projects.projectsCards
       }
     },
   })
