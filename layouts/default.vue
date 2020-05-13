@@ -29,6 +29,8 @@
 
   .default-layout {
     padding: 0 base-unit(25);
+    max-width: 1500px;
+    margin: 0 auto;
 
     &.default-container {
       padding-top: 20vh;

@@ -33,7 +33,8 @@
 
         .text-container {
             padding: 0 base-unit(40);
-            margin-bottom: base-unit(15);
+            max-width: 1500px;
+            margin: 0 auto calc(8px * 15) auto;
 
             .margin-bottom {
                 margin-bottom: base-unit(10);

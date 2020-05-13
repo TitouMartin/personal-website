@@ -20,7 +20,7 @@
             </div>
 
             <div class="project-image">
-                <div class="image-container project-image">
+                <div class="image-container">
                     <img src="~/assets/images/personal-projects/aquatic_radio.png" alt="Sofya website">
                 </div>
             </div>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="project-image">
-                <div class="image-container project-image">
+                <div class="image-container">
                     <img src="~/assets/images/personal-projects/plantarium.png" alt="Sofya website">
                 </div>
             </div>
