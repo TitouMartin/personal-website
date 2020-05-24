@@ -136,3 +136,16 @@
         opacity: 1;
     }
 }
+
+@mixin navbar-appear {
+    animation: 1s ease-in-out 1 forwards navbar-appear;
+}
+
+@keyframes navbar-appear {
+    0% {
+        top: base-unit(-6);
+    }
+    100% {
+        top: 0;
+    }
+}

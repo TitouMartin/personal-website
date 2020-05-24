@@ -8,8 +8,10 @@
 
                 <h2>About</h2>
                 <p class="margin-bottom">This projects are nothing more than a few shots provided for my 
-                    <span class="link">dribbble</span> and <span class="link">instagram</span> accounts. They are some
-                    visual experiments moslty maint for practice.
+                    <a href="https://dribbble.com/titoumartin" target="_blank" class="link simple-link">Dribbble</a> 
+                    and 
+                    <a href="https://www.instagram.com/titouanmartin/" target="_blank " class="link simple-link">Instagram</a> 
+                    accounts. They are some visual experiments moslty maint for practice.
                 </p>
 
                 <h2>Aquatic Radio</h2>

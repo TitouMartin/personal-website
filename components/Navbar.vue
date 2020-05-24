@@ -20,6 +20,7 @@
         top: 0;
         font-weight: bold;
         z-index: 1000;
+        @include navbar-appear;
 
         .navbar-content {
             display: flex;
