@@ -3,7 +3,7 @@
         <div class="navbar-content">
             <nuxt-link to="/">Titouan Martin</nuxt-link>
             <div class="navbar-links">
-                <p class="margin-right link">About</p>
+                <nuxt-link to="/about" class="margin-right link">About</nuxt-link>
                 <nuxt-link to="/work" class="link">Work</nuxt-link>
             </div>
         </div>

@@ -6,7 +6,7 @@
             <div class="apps">
                 <div class="app"><font-awesome-icon :icon="['far', 'envelope']" class="icon" /></div>
                 <div class="app"><font-awesome-icon :icon="['fab', 'linkedin-in']" class="icon" /></div>
-                <div class="app"><font-awesome-icon :icon="['fab', 'instagram']" class="icon" /></div>
+                <div class="app"><font-awesome-icon :icon="['far', 'file']" class="icon" /></div>
             </div>
         </div>
     </div>

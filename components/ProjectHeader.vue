@@ -31,33 +31,6 @@
         @include project-content-appear;
         @include transition;
 
-        .text-container {
-            padding: 0 base-unit(40);
-            max-width: 1500px;
-            margin: 0 auto calc(8px * 15) auto;
-
-            .margin-bottom {
-                margin-bottom: base-unit(10);
-            }
-
-            .p-break {
-                margin-bottom: base-unit(4);
-            }
-
-            .quote {
-                width: 85%;
-                text-align: center;
-                margin: base-unit(4) auto;
-
-            }
-
-            .congrats {
-                font-style: italic;
-                opacity: 0.8;
-                margin-right: $base-unit;
-            }
-        }
-
         .project-image {
             margin-bottom: base-unit(15);
             position: relative;
@@ -80,18 +53,7 @@
                 width: 100vw;
                 z-index: -1;
             }
-            &.sofya-website:before {
-                background-color: #FCFAF2;
-                bottom: 0;
-            }
-
-            &.sofya:before {
-                background-color: #D8DFFF;
-                top: 50%;
-                transform: translateY(-50%);
-            }
         }
-
     }
 </style>
 

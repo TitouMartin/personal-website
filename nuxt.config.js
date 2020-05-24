@@ -73,11 +73,11 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-regular-svg-icons',
-            icons: ['faEnvelope']
+            icons: ['faEnvelope', 'faFile']
           },
          {
            set:'@fortawesome/free-brands-svg-icons',
-           icons: ['faLinkedinIn', 'faInstagram']
+           icons: ['faLinkedinIn']
          }
        ]
       }

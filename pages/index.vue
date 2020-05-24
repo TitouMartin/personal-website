@@ -4,7 +4,7 @@
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
         <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products</p>
-        <p class="medium-fat">while making them <span class="double-text beautiful">beautiful</span> on the way.</p>
+        <p class="medium-fat">and make them <span class="double-text beautiful">beautiful</span> on the way.</p>
       </div>
     </div>
 
@@ -78,7 +78,7 @@
   }
 
   .cards-container {
-    margin-bottom: base-unit(10);
+    margin-bottom: base-unit(15);
 
     .card-link {
       display: inline-block;
@@ -86,7 +86,7 @@
       width: 100%;
 
       &:not(:last-child) {
-        margin-bottom: base-unit(10);
+        margin-bottom: base-unit(15);
       }
     }
   }
