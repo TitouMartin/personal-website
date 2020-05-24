@@ -4,9 +4,17 @@
             Get in touch
 
             <div class="apps">
-                <div class="app"><font-awesome-icon :icon="['far', 'envelope']" class="icon" /></div>
-                <div class="app"><font-awesome-icon :icon="['fab', 'linkedin-in']" class="icon" /></div>
-                <div class="app"><font-awesome-icon :icon="['far', 'file']" class="icon" /></div>
+                <a href="mailto:titouan.martin@free.fr" class="app">
+                    <font-awesome-icon :icon="['far', 'envelope']" class="icon" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/titoumartin/" target="_blanf" class="app">
+                    <font-awesome-icon :icon="['fab', 'linkedin-in']" class="icon" />
+                </a>
+
+                <a href="~/assets/files/CV_Titouan_MARTIN.pdf" target="_blank" class="app">
+                    <font-awesome-icon :icon="['far', 'file']" class="icon" />
+                </a>
             </div>
         </div>
     </div>
@@ -19,12 +27,12 @@
         margin: 0 auto base-unit(10) auto;
 
         .get-in-touch {
-        margin: auto;
+            margin: auto;
         }
 
         .know-more {
-        color: $title-blue;
-        margin-bottom: base-unit(4);
+            color: $title-blue;
+            margin-bottom: base-unit(4);
         }
     }
 
@@ -69,6 +77,7 @@
                     height: base-unit(4);
                     width: base-unit(4);
                     position: relative;
+                    color: $white;
 
                     &:before {
                         content: '';

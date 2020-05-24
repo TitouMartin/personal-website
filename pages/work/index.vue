@@ -1,5 +1,5 @@
 <template>
-  <div class="default-layout default-container">
+  <div class="default-layout default-container slow-appear">
 
     <div class="cards-container">
       <template v-for="card in cards">

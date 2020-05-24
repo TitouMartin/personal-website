@@ -1,10 +1,13 @@
 <template>
-  <div class="default-layout">
+  <div class="default-layout slow-appear">
     <div class="above-the-fold">
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
-        <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products</p>
-        <p class="medium-fat">and make them <span class="double-text beautiful">beautiful</span> on the way.</p>
+        <div class="intro">
+          <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products</p>
+          <p class="medium-fat">and make them <span class="double-text beautiful">beautiful</span> on the way.</p>
+        </div>
+        <GetInTouch />
       </div>
     </div>
 
@@ -31,8 +34,7 @@
       top: 50%;
       transform: translateY(-60%);
 
-      h1 {
-        font-family: 'Lato', sans-serif;
+      h1, .intro {
         margin-bottom: base-unit(4);
       }
 

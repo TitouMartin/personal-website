@@ -1,5 +1,5 @@
 <template>
-    <div class="default-layout default-container">
+    <div class="default-layout default-container slow-appear">
         <div class="text-container no-padding">
             <h2>My name is Titouan,</h2>
             <p>I am a 26 years old product designer based in Paris, currently working at 

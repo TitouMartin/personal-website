@@ -28,13 +28,17 @@
   }
 
   .default-layout {
-    padding: 0 base-unit(35);
+    padding: 0 base-unit(35) base-unit(20) base-unit(35);
     max-width: 1500px;
     margin: 0 auto;
 
     &.default-container {
       padding-top: 20vh;
     }
+  }
+
+  .slow-appear {
+    @include slow-appear;
   }
 
   h1 {
