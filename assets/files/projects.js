@@ -16,7 +16,7 @@ export const personalProjects = {
     role: 'Conception, design & graphic design',
     cardImg: '',
     cardBackgroundColor: '#C1DDFA',
-    headerImg: require('@/assets/images/sofya/macbook_ged.png'),
+    headerImg: require('@/assets/images/personal-projects/macbook_projects.png'),
     headerBackgroundColor: '#C1DDFA'
 }
 
