@@ -3,7 +3,7 @@
         <ProjectHeader :headerInfos="personalProjects" />
 
         <div class="project-content">
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h1 class="app-title">Personal Projects</h1>
 
                 <h2>About</h2>
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h2>Plantarium</h2>
                     <p>Explicitely Plantarium is supposed to be an online plain shop, also providing
                         maintaining advices.
@@ -45,7 +45,7 @@
                 <GetInTouch />
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h4 class="light-text">Like what you see ? Keep browsing !</h4>
                 <ProjectCard :cardInfos="sofya"/>
             </div>

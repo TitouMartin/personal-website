@@ -3,7 +3,7 @@
         <ProjectHeader :headerInfos="sofya"/>
         <div class="project-content">
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h1 class="app-title">Sofya</h1>
 
                 <h2>In a nutshell</h2>
@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h2>Main design challenges</h2>
                 <p class="margin-bottom">Among the various challenges that occurred while developing Sofya, I identified 
                     two main ones that have been particularly recurrent. While appearing at many times in different forms, 
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h4>Complex configuration panels</h4>
                 <p>Sofya includes a settings module allowing project managers to set up specific rules and columns 
                     applied to certain selected folders. This rules are an inherent part of every french construction project. Among 
@@ -117,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h2>Communication</h2>
                 <p class="margin-bottom">The further our product approached the beta test phase, the more we started thinking 
                     about communication. Our first urge was to renew the whole brand image wich had initially been created in a 
@@ -190,7 +190,7 @@
 
             <div class="soon-image"></div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h2>On a more personal note</h2>
                 <p class="p-break">Arriving as a junior and being the sole designer for the project was not an easy task. 
                     I had to learn how to affirm my opinions and trust my guts when in disagreement with the tech team. 
@@ -213,7 +213,7 @@
                 <GetInTouch />
             </div>
 
-            <div class="text-container">
+            <div class="text-container default-layout">
                 <h4 class="light-text">Like what you see ? Keep browsing !</h4>
                 <ProjectCard :cardInfos="personalProjects"/>
             </div>

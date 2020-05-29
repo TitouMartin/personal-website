@@ -1,5 +1,5 @@
 <template>
-  <div class="default-layout slow-appear">
+  <div class="default-layout slow-appear bottom-page-margin">
     <div class="above-the-fold">
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>

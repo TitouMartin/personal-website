@@ -24,7 +24,7 @@
 
     .more {
         width: fit-content;
-        margin: 0 auto base-unit(10) auto;
+        margin: 0 auto base-unit(20) auto;
 
         .get-in-touch {
             margin: auto;

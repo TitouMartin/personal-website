@@ -1,0 +1,77 @@
+.default-layout {
+    padding: 0 base-unit(35);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.default-container {
+    padding-top: 20vh;
+}
+
+.bottom-page-margin {
+    margin-bottom: base-unit(40);
+}
+
+.slow-appear {
+    @include slow-appear;
+}
+
+.link {
+    width: fit-content;
+    position: relative;
+
+    &.simple-link {
+      color: $title-blue;
+    }
+
+    &:before {
+      content: '';
+      height: 3px;
+      width: 0px;
+      background-color: $text-color;
+      border-radius: 10px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      @include transition;
+    }
+
+    &.simple-link::before {
+      background-color: $title-blue;
+      height: 2px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        width: 100%;
+      }
+    }
+}
+
+.text-container {
+    margin-bottom: calc(8px * 15);
+
+    .margin-bottom {
+        margin-bottom: base-unit(10);
+    }
+
+    .p-break {
+        margin-bottom: base-unit(4);
+    }
+
+    .quote {
+        width: 85%;
+        text-align: center;
+        margin: base-unit(4) auto;
+
+    }
+
+    .congrats {
+        font-style: italic;
+        opacity: 0.8;
+        margin-right: $base-unit;
+    }
+}

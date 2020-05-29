@@ -1,6 +1,6 @@
 <template>
     <div class="default-layout default-container slow-appear">
-        <div class="text-container no-padding">
+        <div class="text-container">
             <h2>My name is Titouan,</h2>
             <p>I am a 26 years old product designer based in Paris, currently working at 
                 <a href="https://www.sofya.fr/projet/" target="_blank" class="link simple-link">Sofya</a> 
