@@ -8,6 +8,16 @@
     padding-top: 20vh;
 }
 
+@media screen and ($media-lt-md) {
+  .default-layout {
+    padding: 0 base-unit(4);
+  }
+
+  .default-container {
+    padding-top: 15vh;
+  }
+}
+
 .bottom-page-margin {
     margin-bottom: base-unit(40);
 }
@@ -52,10 +62,17 @@
 }
 
 .text-container {
-    margin-bottom: calc(8px * 15);
+    margin-bottom: base-unit(10);
 
     .margin-bottom {
-        margin-bottom: base-unit(10);
+      margin-bottom: base-unit(10);
+    }
+
+    @media screen and ($media-lt-md) {
+      margin-bottom: base-unit(10);
+      .margin-bottom {
+        margin-bottom: base-unit(6);
+      }
     }
 
     .p-break {

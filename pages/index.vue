@@ -32,7 +32,7 @@
     .presentation {
       position: absolute;
       top: 50%;
-      transform: translateY(-60%);
+      // transform: translateY(-60%);
 
       h1, .intro {
         margin-bottom: base-unit(4);
@@ -46,7 +46,7 @@
       }
 
       .super-fat {
-        font-size: 70px;
+        // font-size: 70px;
         font-weight: 800;
 
         .Titouan:before {
@@ -54,14 +54,14 @@
           color: $title-blue;
           -webkit-text-stroke: 0px transparent;
           position: absolute;
-          top: 4px;
-          left: -5px;
+          // top: 4px;
+          // left: -5px;
           z-index: -1;
         }
       }
 
       .medium-fat {
-        font-size: 40px;
+        // font-size: 40px;
         font-weight: 800;
         margin-bottom: 0;
 
@@ -79,6 +79,43 @@
     }
   }
 
+  @media screen and ($media-gt-xs) {
+    .presentation {
+      transform: translateY(-60%);
+    }
+    .super-fat {
+      font-size: 70px;
+
+        .Titouan:before {
+          top: 4px;
+          left: -5px;
+        }
+    }
+    .medium-fat {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and ($media-lt-md) {
+
+    .presentation {
+      max-width: 70%;
+      transform: translateY(-50%);
+    }
+    .super-fat {
+      font-size: 45px;
+
+      .Titouan:before {
+        top: 4px;
+        left: -3px;
+      }
+    }
+    .medium-fat {
+      line-height: 40px;
+      font-size: 30px;
+    }
+  }
+
   .cards-container {
     margin-bottom: base-unit(15);
 
@@ -89,6 +126,10 @@
 
       &:not(:last-child) {
         margin-bottom: base-unit(15);
+
+        @media screen and ($media-lt-md) {
+          margin-bottom: base-unit(7);
+        }
       }
     }
   }

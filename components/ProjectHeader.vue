@@ -18,11 +18,20 @@
         @include transition;
         @include project-header-appear;
 
+
         .header-image {
             height: 60vh;
             margin-top: base-unit(2);
             @include transition;
             @include project-header-appear-img;
+        }
+
+        @media screen and ($media-lt-md) {
+            padding-top: base-unit(5);
+
+            .header-image {
+                height: 50vh;
+            }
         }
     }
 
@@ -42,6 +51,11 @@
                 img {
                     height: 80vh;
                     margin: 0 auto;
+
+                    @media screen and ($media-lt-md) {
+                        height: auto;
+                        width: 100vw;
+                    }
                 }
             }
 
@@ -52,6 +66,10 @@
                 height: 60vh;
                 width: 100vw;
                 z-index: -1;
+
+                @media screen and ($media-lt-md) {
+                    height: 40vh;
+                }
             }
         }
     }

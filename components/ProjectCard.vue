@@ -50,7 +50,19 @@
             bottom: 0;
             right: 0;
         }
+    }
 
+    @media screen and ($media-lt-md) {
+        .project-card {
+            height: base-unit(48);
+
+            .project-card-info {
+                width: 100%;
+            }
+        }
+        .card-image {
+            display: none;
+        }
     }
 
 </style>

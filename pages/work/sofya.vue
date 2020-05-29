@@ -271,6 +271,23 @@
                     width: 45%;
                 }
             }
+
+            @media screen and ($media-lt-md) {
+                flex-direction: column;
+                .graph-chart-title {
+                    margin-bottom: base-unit(4);
+                }
+
+                .logo {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: base-unit(6);
+                    img {
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+            }
             .color {
                 display: flex;
                 flex-direction: row;
