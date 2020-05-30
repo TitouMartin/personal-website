@@ -12,7 +12,7 @@
                     <font-awesome-icon :icon="['fab', 'linkedin-in']" class="icon" />
                 </a>
 
-                <a href="~/assets/files/CV_Titouan_MARTIN.pdf" target="_blank" class="app">
+                <a href="CV_Titouan_MARTIN.pdf" target="_blank" class="app">
                     <font-awesome-icon :icon="['far', 'file']" class="icon" />
                 </a>
             </div>

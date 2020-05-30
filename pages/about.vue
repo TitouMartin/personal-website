@@ -10,7 +10,7 @@
                 with Le Wagon coding boot camp.
             </p>
             <p class="p-break">Interested about my career ? 
-                <a href="~/assets/files/CV_Titouan_MARTIN.pdf" download class="link simple-link">Download my resume.</a>
+                <a href="CV_Titouan_MARTIN.pdf" download class="link simple-link">Download my resume.</a>
             </p>
             <p class="margin-bottom">Apart from design, most of my free time is dedicated to making music and 
                 watching movies, two passions that have been impacting most of my adult life.
