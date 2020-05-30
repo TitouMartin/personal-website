@@ -4,8 +4,8 @@
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
         <div class="intro">
-          <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products</p>
-          <p class="medium-fat">and make them <span class="double-text beautiful">beautiful</span> on the way.</p>
+          <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products,</p>
+          <p class="medium-fat">making them <span class="double-text beautiful">beautiful</span> on the way.</p>
         </div>
         <GetInTouch />
       </div>
