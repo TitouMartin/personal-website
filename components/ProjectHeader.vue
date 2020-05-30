@@ -26,7 +26,7 @@
             @include project-header-appear-img;
         }
 
-        @media screen and ($media-lt-md) {
+        @media screen and ($media-lt-sm) {
             padding-top: base-unit(5);
 
             .header-image {
@@ -52,7 +52,7 @@
                     height: 80vh;
                     margin: 0 auto;
 
-                    @media screen and ($media-lt-md) {
+                    @media screen and ($media-lt-sm) {
                         height: auto;
                         width: 100vw;
                     }
@@ -67,7 +67,7 @@
                 width: 100vw;
                 z-index: -1;
 
-                @media screen and ($media-lt-md) {
+                @media screen and ($media-lt-sm) {
                     height: 40vh;
                 }
             }

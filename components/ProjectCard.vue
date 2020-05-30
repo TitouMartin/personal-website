@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="computeRoute()" class="card-link">
+    <nuxt-link :to="computeRoute()">
         <div class="project-card" :style="style">
             <div class="project-card-info">
                 <h2>{{ cardInfos.name }}</h2>
@@ -17,7 +17,7 @@
 
     .project-card {
         border-radius: 5px;
-        height: base-unit(40);
+        min-height: base-unit(40);
         padding: base-unit(4);
         @include transition;
         position: relative;
@@ -52,7 +52,7 @@
         }
     }
 
-    @media screen and ($media-lt-md) {
+    @media screen and ($media-lt-sm) {
         .project-card {
             height: base-unit(48);
 

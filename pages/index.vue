@@ -12,9 +12,9 @@
     </div>
 
     <div class="cards-container">
-      <template v-for="card in cards">
+      <div v-for="card in cards" :key="card" class="card-link">
         <project-card :cardInfos="card" />
-      </template>
+      </div>
     </div>
 
     <div class="more">
@@ -27,12 +27,11 @@
 <style lang="scss">
 
   .above-the-fold {
-    height: 100vh; // 100vh - index container padding
+    height: 100vh;
 
     .presentation {
       position: absolute;
       top: 50%;
-      // transform: translateY(-60%);
 
       h1, .intro {
         margin-bottom: base-unit(4);
@@ -46,7 +45,6 @@
       }
 
       .super-fat {
-        // font-size: 70px;
         font-weight: 800;
 
         .Titouan:before {
@@ -54,8 +52,6 @@
           color: $title-blue;
           -webkit-text-stroke: 0px transparent;
           position: absolute;
-          // top: 4px;
-          // left: -5px;
           z-index: -1;
         }
       }
@@ -96,7 +92,7 @@
     }
   }
 
-  @media screen and ($media-lt-md) {
+  @media screen and ($media-lt-sm) {
 
     .presentation {
       max-width: 70%;
@@ -127,7 +123,7 @@
       &:not(:last-child) {
         margin-bottom: base-unit(15);
 
-        @media screen and ($media-lt-md) {
+        @media screen and ($media-lt-sm) {
           margin-bottom: base-unit(7);
         }
       }

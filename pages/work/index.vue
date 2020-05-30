@@ -2,9 +2,9 @@
   <div class="default-layout default-container bottom-page-margin slow-appear">
 
     <div class="cards-container">
-      <template v-for="card in cards">
+      <div v-for="card in cards" :key="card" class="card-link">
         <project-card :cardInfos="card" />
-      </template>
+      </div>
     </div>
 
     <div class="more">

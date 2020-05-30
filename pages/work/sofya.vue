@@ -272,7 +272,7 @@
                 }
             }
 
-            @media screen and ($media-lt-md) {
+            @media screen and ($media-lt-sm) {
                 flex-direction: column;
                 .graph-chart-title {
                     margin-bottom: base-unit(4);

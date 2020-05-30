@@ -8,7 +8,7 @@
     padding-top: 20vh;
 }
 
-@media screen and ($media-lt-md) {
+@media screen and ($media-lt-sm) {
   .default-layout {
     padding: 0 base-unit(4);
   }
@@ -68,7 +68,7 @@
       margin-bottom: base-unit(10);
     }
 
-    @media screen and ($media-lt-md) {
+    @media screen and ($media-lt-sm) {
       margin-bottom: base-unit(10);
       .margin-bottom {
         margin-bottom: base-unit(6);
