@@ -188,7 +188,7 @@
                 </p>
             </div>
 
-            <div class="soon-image"></div>
+            <!-- <div class="soon-image"></div> -->
 
             <div class="text-container default-layout">
                 <h2>On a more personal note</h2>
@@ -227,12 +227,14 @@
 <style lang="scss">
 
     // TODO remove next class
+    /*
     .soon-image {
         height: 50vh;
         width: 100%;
         background-color: #F6F6F6;
         margin-bottom: base-unit(10);
     }
+    */
 
     .project-image {
 

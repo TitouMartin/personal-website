@@ -20,9 +20,9 @@
 
 
         <div class="cta-xs bold">
-            <span class="title">
+            <div class="title">
                 Get in touch
-            </span>
+            </div>
 
             <div class="apps">
                 <a href="mailto:titouan.martin@free.fr" class="app">
@@ -148,6 +148,11 @@
     .cta-xs {
         color: $title-blue;
 
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+
         .apps {
             height: 100%;
             margin-top: base-unit(2);
@@ -209,19 +214,7 @@
     }
     .get-in-touch {
         margin: 0 0;
-        padding-left: base-unit(2);
         position: relative;
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: base-unit(0.5);
-            background: $button-background;
-            border-radius: 10px;
-        }
     }
 }
 

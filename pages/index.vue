@@ -4,8 +4,8 @@
       <div class="presentation">
         <h1 class="super-fat">Hi, I'm <span class="double-text Titouan">Titouan.</span></h1>
         <div class="intro">
-          <p class="medium-fat">I design and craft <span class="double-text human-friendly">human friendly</span> products,</p>
-          <p class="medium-fat">making them <span class="double-text beautiful">beautiful</span> on the way.</p>
+          <p class="medium-fat">I design and craft <br class="small-page-break"><span class="double-text human-friendly">human friendly</span><br class="small-page-break"> products,</p>
+          <p class="medium-fat">making them <br class="small-page-break"><span class="double-text beautiful">beautiful</span><br class="small-page-break"> on the way.</p>
         </div>
         <GetInTouch />
       </div>
@@ -33,7 +33,7 @@
       position: absolute;
       top: 50%;
 
-      h1, .intro {
+      .intro {
         margin-bottom: base-unit(4);
       }
 
@@ -81,6 +81,7 @@
     }
     .super-fat {
       font-size: 70px;
+      margin-bottom: base-unit(4);
 
         .Titouan:before {
           top: 4px;
@@ -90,24 +91,29 @@
     .medium-fat {
       font-size: 40px;
     }
+
+    .small-page-break {
+      display: none;
+    }
   }
 
   @media screen and ($media-lt-sm) {
 
     .presentation {
-      max-width: 70%;
       transform: translateY(-50%);
     }
     .super-fat {
-      font-size: 45px;
+      font-size: 30px;
+      line-height: 45px;
+      margin-bottom: base-unit(2);
 
       .Titouan:before {
-        top: 4px;
-        left: -3px;
+        top: -1px;
+        left: -2px;
       }
     }
     .medium-fat {
-      line-height: 40px;
+      line-height: 45px;
       font-size: 30px;
     }
   }
