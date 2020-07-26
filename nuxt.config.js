@@ -43,6 +43,7 @@ export default {
    */
   plugins: [
     { src: '~plugins/ga.js', mode: 'client' },
+    { src: '~plugins/hj.js', mode: 'client' },
   ],
   /*
    ** Nuxt.js dev-modules
